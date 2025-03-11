@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contextual Selectors</title>
+    <style type="text/css">
+        p em {
+            color: red;
+        }
+
+        p>em {
+            color: blue;
+        }
+
+        p+em {
+            color: green;
+        }
+
+        em~strong {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <strong><em>descendant selector</em></strong>
+    </p>
+    <p>
+        <em> child selector</em>
+    </p>
+    <em>adjacent sibling selector</em>
+    <p>
+        <em>child selector</em>
+        <strong>general sibling selector</strong>
+    </p>
+</body>
+
+</html
